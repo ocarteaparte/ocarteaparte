@@ -1,0 +1,23 @@
+@stairWidth: 10rem;
+@stairHeight:2rem;
+@stairColor:red;
+@stairNumber:4;
+.stairs {
+	//width:50%;
+	//height:50%;
+ 
+	//.middle;
+}
+	.stair {
+		width:@stairWidth;
+		height:@stairHeight;
+		display: block;
+		background-color:@stairColor;
+	}
+.move-stairs(@stairNumber);
+.move-stairs(@n, @i:1) when (@i =< @n){
+	.stair-@{i} {
+		margin-left:((@stairNumber - @i) * (@stairWidth));
+	}
+.move-stairs(@n, (@i + 1));
+}
