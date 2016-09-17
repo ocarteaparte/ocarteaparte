@@ -16,6 +16,19 @@ $(document).ready(function () {
 				"<span class='facebook-post-date'>"+ el.created_time +"</span>"+
 			"</div>");
 		}
+		// if (el.link){
+		// 	$(facebookBookContainer).append("<div class='facebook-post bb-item'>"+
+		// 		"<div class='facebook-post-title'>"+ el.link +"</div>"+
+		// 		"<span class='facebook-post-date'>"+ el.created_time +"</span>"+
+		// 	"</div>");
+		// }
+		//
+		// if (el.source){
+		// 	$(facebookBookContainer).append("<div class='facebook-post bb-item'>"+
+		// 		"<div class='facebook-post-title'>"+ "image placeholder, please ignore" +"</div>"+
+		// 		"<span class='facebook-post-date'>"+ el.created_time +"</span>"+
+		// 	"</div>");
+		// }
 		//$('#bb-bookblock').bookblock();
 
 		// $(".action-page.next").on("click", function(){
