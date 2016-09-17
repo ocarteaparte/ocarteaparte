@@ -10,22 +10,18 @@ $(document).ready(function () {
 				"</div>"+
 			"</div>");
 		}
-		if (el.story){
+
+		else {
 			$(facebookBookContainer).append("<div class='facebook-post bb-item'>"+
-				"<div class='facebook-post-title'>"+ el.story +"</div>"+
-				"<span class='facebook-post-date'>"+ el.created_time +"</span>"+
+				"<div class='post-container'>"+
+					"<div class='facebook-post-title'>" + el.id + "</div>"+
+					"<span class='facebook-post-date'>"+ el.created_time +"</span>"+
+				"</div>"+
 			"</div>");
 		}
-		// if (el.link){
+		// if (el.story){
 		// 	$(facebookBookContainer).append("<div class='facebook-post bb-item'>"+
-		// 		"<div class='facebook-post-title'>"+ el.link +"</div>"+
-		// 		"<span class='facebook-post-date'>"+ el.created_time +"</span>"+
-		// 	"</div>");
-		// }
-		//
-		// if (el.source){
-		// 	$(facebookBookContainer).append("<div class='facebook-post bb-item'>"+
-		// 		"<div class='facebook-post-title'>"+ "image placeholder, please ignore" +"</div>"+
+		// 		"<div class='facebook-post-title'>"+ el.story +"</div>"+
 		// 		"<span class='facebook-post-date'>"+ el.created_time +"</span>"+
 		// 	"</div>");
 		// }
