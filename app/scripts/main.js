@@ -1,30 +1,23 @@
 'use strict';
 $(document).ready(function () {
+
 	var facebookBookContainer = $(".facebook-container").find(".flip-book");
+	var source = $(".pageTemplate").html();
+	var template = Handlebars.compile(source);
+
 	function appendFacebookElement(el){
-		if (el.message){
-			$(facebookBookContainer).append("<div class='facebook-post bb-item'>"+
-				"<div class='post-container'>"+
-					"<div class='facebook-post-title'>"+ el.message +"</div>"+
-					"<span class='facebook-post-date'>"+ el.created_time +"</span>"+
-				"</div>"+
-			"</div>");
+
+		var data = { message: el.message, time: el.created_time };
+		var html = template(data);
+
+		if (el.message) {
+			$(facebookBookContainer).append(html);
 		}
 
 		else {
-			$(facebookBookContainer).append("<div class='facebook-post bb-item'>"+
-				"<div class='post-container'>"+
-					"<div class='facebook-post-title'>" + el.id + "</div>"+
-					"<span class='facebook-post-date'>"+ el.created_time +"</span>"+
-				"</div>"+
-			"</div>");
+			return false;
 		}
-		// if (el.story){
-		// 	$(facebookBookContainer).append("<div class='facebook-post bb-item'>"+
-		// 		"<div class='facebook-post-title'>"+ el.story +"</div>"+
-		// 		"<span class='facebook-post-date'>"+ el.created_time +"</span>"+
-		// 	"</div>");
-		// }
+
 		//$('#bb-bookblock').bookblock();
 
 		// $(".action-page.next").on("click", function(){

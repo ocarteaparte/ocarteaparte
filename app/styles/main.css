@@ -6033,6 +6033,8 @@ td.visible-print {
   padding: 1rem;
 }
 .facebook-post-title {
+  font-family: Dekko, sans-serif;
+  font-size: 16px;
   height: 95%;
   word-break: break-word;
   -webkit-column-count: 2;
