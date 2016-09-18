@@ -6,7 +6,7 @@ $(document).ready(function () {
 	var template = Handlebars.compile(source);
 
 	function appendFacebookElement(el){
-
+		console.log(el);
 		var data = { post: el };
 		var html = template(data);
 
@@ -39,7 +39,7 @@ $(document).ready(function () {
 			version: 'v2.7'
 		});
 		FB.login(function(data){
-			console.log(data);
+			//console.log(data);
 			FB.api('/tineriidecid/posts', function(response){
 				response.data.forEach(function(el){
 					appendFacebookElement(el);
@@ -75,7 +75,7 @@ var Page = (function() {
 				shadowFlip : 0.7
 			} );
 			initEvents();
-			console.log(config.$navNext);
+			//console.log(config.$navNext);
 		},
 		initEvents = function() {
 
