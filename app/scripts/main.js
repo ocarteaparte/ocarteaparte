@@ -7,10 +7,10 @@ $(document).ready(function () {
 
 	function appendFacebookElement(el){
 
-		var data = { message: el.message, time: el.created_time };
+		var data = { post: el };
 		var html = template(data);
 
-		if (el.message) {
+		if (el.message  || el.story) {
 			$(facebookBookContainer).append(html);
 		}
 
