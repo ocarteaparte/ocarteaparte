@@ -6044,6 +6044,10 @@ td.visible-print {
 .facebook-post-date {
   margin-left: 370px;
 }
+.bb-overlay,
+.bb-flipoverlay {
+  border-radius: 20px;
+}
 #bb-nav-prev,
 #bb-nav-next {
   cursor: pointer;

@@ -314,22 +314,22 @@
 
 					$o_middle_f.css({
 						opacity: dir === 'next' ? self.options.shadowFlip : 0,
-						borderRadius: 20
+						borderTopLeftRadius: 0,
+						borderBottomLeftRadius: 0
 					});
 
 					$o_middle_b.css({
 						opacity: dir === 'next' ? 0 : self.options.shadowFlip,
-						borderRadius: 20
+						borderTopRightRadius: 0,
+						borderBottomRightRadius: 0
 					});
 
 					$o_left.css({
-						opacity: dir === 'next' ? self.options.shadowSides : 0,
-						borderRadius: 20
+						opacity: dir === 'next' ? self.options.shadowSides : 0
 					});
 
 					$o_right.css({
-						opacity: dir === 'next' ? 0 : self.options.shadowSides,
-						borderRadius: 20
+						opacity: dir === 'next' ? 0 : self.options.shadowSides
 					});
 
 				}
