@@ -6041,6 +6041,21 @@ td.visible-print {
   -webkit-column-gap: 45px;
   column-fill: auto;
 }
+.facebook-post-date {
+  margin-left: 370px;
+}
+#bb-nav-prev,
+#bb-nav-next {
+  cursor: pointer;
+}
+#bb-nav-next:hover {
+  background-color: rgba(51, 51, 51, 0.1);
+  border-radius: 0% 20px 20px 0%;
+}
+#bb-nav-prev:hover {
+  background-color: rgba(51, 51, 51, 0.1);
+  border-radius: 20px 0% 0% 20px;
+}
 .vertical-middle {
   position: absolute;
   top: 50%;

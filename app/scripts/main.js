@@ -51,7 +51,9 @@ $(document).ready(function () {
 
 	});
 
-
+	$("#bb-nav-next").click(function(){
+		$("i").remove();
+	});
 
 	var human = $(".human");
 	human.click(function () {
