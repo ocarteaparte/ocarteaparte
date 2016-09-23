@@ -18,15 +18,6 @@ $(document).ready(function () {
 			return false;
 		}
 
-		//$('#bb-bookblock').bookblock();
-
-		// $(".action-page.next").on("click", function(){
-		// 	$("#bb-bookblock").bookblock("next");
-		// 	console.log(this);
-		// });
-		// $(".action-page.prev").on("click", function(){
-		// 	$("#bb-bookblock").bookblock("prev");
-		// });
 	};
 
 	$.ajaxSetup({
@@ -49,10 +40,6 @@ $(document).ready(function () {
 		});
 
 
-	});
-
-	$("#bb-nav-next").click(function(){
-		$("i").remove();
 	});
 
 	var human = $(".human");

@@ -6034,19 +6034,24 @@ td.visible-print {
 }
 .facebook-post-title {
   font-family: Dekko, sans-serif;
-  font-size: 16px;
+  font-size: 1.6rem;
   height: 95%;
   word-break: break-word;
   -webkit-column-count: 2;
-  -webkit-column-gap: 45px;
+  -moz-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 4.5rem;
+  -moz-column-gap: 4.5rem;
+  column-gap: 4.5rem;
+  -moz-column-fill: auto;
   column-fill: auto;
 }
 .facebook-post-date {
-  margin-left: 370px;
+  margin-left: 37rem;
 }
 .bb-overlay,
 .bb-flipoverlay {
-  border-radius: 20px;
+  border-radius: 2rem;
 }
 #bb-nav-prev,
 #bb-nav-next {
@@ -6054,11 +6059,11 @@ td.visible-print {
 }
 #bb-nav-next:hover {
   background-color: rgba(51, 51, 51, 0.1);
-  border-radius: 0% 20px 20px 0%;
+  border-radius: 0% 2rem 2rem 0%;
 }
 #bb-nav-prev:hover {
   background-color: rgba(51, 51, 51, 0.1);
-  border-radius: 20px 0% 0% 20px;
+  border-radius: 2rem 0% 0% 2rem;
 }
 .vertical-middle {
   position: absolute;
