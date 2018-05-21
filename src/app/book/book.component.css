@@ -1,0 +1,9 @@
+.book-element{
+    position: relative;
+    margin: auto;
+    height: 80px;
+    width: 80%;
+    background-color: lightgray;
+    padding: 20px;
+    margin-top: 20px;
+}
